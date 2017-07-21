@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.css">
+  
+        <title>Login&Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="navbar-form navbar-left" >
+        
+        <form action="servlet/Register" method="post">
+            <center>
+UserName:<input type="text" name="userName"/><br/><br/>
+Password: <input type="password" name="userPass"/><br/><br/>
+Country:
+<select name="userCountry">
+<option>India</option>
+<option>Pakistan</option>
+<option>other</option>
+</select>
+
+<br/><br/>
+<input type="submit" value="register"/>
+            </center>
+</form>
+            
+           <form action="login" method="post">
+            UserName:<input type="text" name="user" required=""><br><br>
+            PassWord:<input type="password" name="password" required=""><br><br>
+                  <input type="submit" value="login">
+         
+            </form>
+            
+        </div>
+    </body>
+</html>
